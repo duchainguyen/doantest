@@ -23,7 +23,8 @@ def _Svc():
     #         count_svc = count_svc + 1
     # predictCorrect = count_svc/len(y_pred_svc)
     # print("count", count_svc)
-    print('Ty le du doan dung SVC là: ',accuracy_score(y_test,y_pred_svc) )
+    predictCorrect=accuracy_score(y_test,y_pred_svc)
+    print('Ty le du doan dung SVC là: ',predictCorrect)
 
     # Các độ đo 
     from sklearn.metrics import precision_score
